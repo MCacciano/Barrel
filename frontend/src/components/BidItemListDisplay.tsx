@@ -76,6 +76,8 @@ const BidItemListDisplay: FC<userProp> = (props: userProp) => {
 
               const completeBidItems = await getItemDetails(tempBidItems);
 
+              console.log('completeBidItems', completeBidItems);
+
               return { ...bid, bidItems: completeBidItems };
             } catch (err) {
               console.error(err);
