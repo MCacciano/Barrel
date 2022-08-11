@@ -97,6 +97,8 @@ const BidItemListDisplay: FC<userProp> = (props: userProp) => {
 
           const bidsWithBidItems = await getBidItems(bids);
 
+          console.log('bidsWithBidItems', bidsWithBidItems);
+
           setBidItems(bidsWithBidItems);
         } catch (err) {
           console.error(err);
